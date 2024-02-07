@@ -1,0 +1,247 @@
+<style>
+    button {
+        border: none;
+  background: #07BBBC;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+    }
+</style>
+
+<body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    
+    <br/><br/><center>
+    <h2 style="font-size: 50px;">KustomAlert.js</h2>
+    
+    <h3>We just need an <span style="text-decoration: underline">good</span> and simple alert.</h3>
+
+<br><br>
+
+<div style="text-align: left;">
+    <h3>1. This is an default alert, include Text. <button onclick="oneAlert()">Open</button></h3>
+    <h3>2. This is an primary alert, include Text and Button. <button onclick="twoAlert()">Open</button></h3>
+    <h3>3. This alert include Icon, Text, Detail, and Button. <button onclick="threeAlert()">Open</button></h3>
+    <h3>4. This alert include Icon, Text, Detail, Button, and hyperlink. <button onclick="fourAlert()">Open</button></h3>
+    <h3>5. This alert include Icon, Text, Detail, Button, and custom HTML. <button onclick="fiveAlert()">Open</button></h3>
+    <h3>6. This alert include Icon, Text, Detail, Button, custom HTML, and image. <button onclick="sixAlert()">Open</button></h3>
+    <h3>7. This alert include Icon, Text, Detail, Button, custom HTML, image, and customization. <button onclick="sevenAlert()">Open</button></h3>
+</div>
+
+    <br><br>
+    <script src="https://gist.github.com/LIGMATV/c9910ec0a88c2c9565509d45772b1d3f.js"></script>
+
+    <br/><br/>
+<h3><img src="data:image/png;base64,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" width="15px"> You done!</h3>
+<h3>⚠️ This alert sometimes affect to your CSS.</h3>
+
+<br><br><br>
+<a target="_blank" href="https://github.com/LIGMATV/KustomAlert.js" class="github-corner" aria-label="View source on GitHub">
+    <svg width="60" height="60" viewBox="0 0 250 250" style="fill:#00ab0b ; color:#ffffff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </a>
+
+</center>
+</body>
+
+<script>
+
+// 1
+
+function oneAlert() {
+    var alertElement = document.createElement("div");
+    alertElement.className = "alert";
+    alertElement.innerHTML = "This alert will go";
+
+    var styleElement = document.createElement("style");
+    styleElement.textContent = `
+        @keyframes grow { from { transform: scale(0); } to { transform: scale(1); } }
+        .alert { display: none; position: fixed; top: 20px; right: 20px; padding: 20 80px 20 80px; background-color: #fff; color: #000; text-align: center; border: none; border-radius: 5px; font-size: 24px; box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px; animation: grow 0.3s ease; }
+    `;
+    document.head.appendChild(styleElement);
+    document.body.appendChild(alertElement);
+    alertElement.style.display = "block";
+    alertElement.addEventListener("animationend", function() {
+        setTimeout(closeAlert, 1000);
+    });
+}
+
+// 2
+
+function twoAlert() {
+    var alertElement = document.createElement("div");
+    alertElement.className = "alert";
+    alertElement.innerHTML = "This is good alert <br><br> <button onclick='closeAlert()'>Close</button>";
+
+    var styleElement = document.createElement("style");
+    styleElement.textContent = `
+        @keyframes grow { from { transform: scale(0); } to { transform: scale(1); } }
+        .alert { display: none; position: fixed; top: 20px; right: 20px; padding: 20 80px 20 80px; background-color: #fff; color: #000; text-align: center; border: none; border-radius: 5px; font-size: 24px; box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px; animation: grow 0.3s ease; }
+       
+        /** Extra button */
+        button { border: none; background: #07BBBC; padding: 8px 10px; border-radius: 10px; color: #fff; cursor: pointer;}
+        `;
+    document.head.appendChild(styleElement);
+    document.body.appendChild(alertElement);
+    alertElement.style.display = "block";
+    alertElement.addEventListener("animationend")
+}
+
+function closeAlert() {
+    var alertElement = document.querySelector(".alert");
+    alertElement.parentNode.removeChild(alertElement);
+}
+
+// 3
+
+function threeAlert() {
+    var alertElement = document.createElement("div");
+    alertElement.className = "alert";
+    alertElement.innerHTML = "<h1> ? </h1> What is Israel? <br> <p>Not an country, or territories. It's a terrorist.</p> <br> <button onclick='closeAlert()'>Close</button>";
+
+    var styleElement = document.createElement("style");
+    styleElement.textContent = `
+        @keyframes grow { from { transform: scale(0); } to { transform: scale(1); } }
+        .alert { display: none; position: fixed; top: 20px; right: 20px; padding: 0 80px 30 80px; background-color: #fff; color: #000; text-align: center; border: none; border-radius: 5px; font-size: 24px; box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px; animation: grow 0.3s ease; }
+        
+        /** Extra button */
+        button { border: none; background: #07BBBC; padding: 8px 10px; border-radius: 10px; color: #fff; cursor: pointer;}
+         
+        /** Extra icon */
+        h1 { -webkit-animation: pulse 1s infinite ease-in-out alternate; animation: pulse 1s infinite ease-in-out alternate; }
+        @-webkit-keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }} @keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }}      
+      
+        /** Extra text */
+        p { font-size: 16px; }
+        `;
+    document.head.appendChild(styleElement);
+    document.body.appendChild(alertElement);
+    alertElement.style.display = "block";
+    alertElement.addEventListener("animationend")
+}
+
+function closeAlert() {
+    var alertElement = document.querySelector(".alert");
+    alertElement.parentNode.removeChild(alertElement);
+}
+
+// 4
+
+function fourAlert() {
+    var alertElement = document.createElement("div");
+    alertElement.className = "alert";
+    alertElement.innerHTML = "<h1 style='color: red'> X </h1> Human Error <br> <p>Error 404</p> <br> <button onclick='closeAlert()'>Close</button> <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>How to fix</a>";
+
+    var styleElement = document.createElement("style");
+    styleElement.textContent = `
+        @keyframes grow { from { transform: scale(0); } to { transform: scale(1); } }
+        .alert { display: none; position: fixed; top: 20px; right: 20px; padding: 0 80px 30 80px; background-color: #fff; color: #000; text-align: center; border: none; border-radius: 5px; font-size: 24px; box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px; animation: grow 0.3s ease; }
+        
+        /** Extra button */
+        button { border: none; background: #07BBBC; padding: 8px 10px; border-radius: 10px; color: #fff; cursor: pointer;}
+         
+        /** Extra icon */
+        h1 { -webkit-animation: pulse 1s infinite ease-in-out alternate; animation: pulse 1s infinite ease-in-out alternate; }
+        @-webkit-keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }} @keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }}      
+      
+        /** Extra text */
+        p,a { font-size: 16px; }
+        `;
+    document.head.appendChild(styleElement);
+    document.body.appendChild(alertElement);
+    alertElement.style.display = "block";
+    alertElement.addEventListener("animationend")
+}
+
+// 5
+
+function fiveAlert() {
+    var alertElement = document.createElement("div");
+    alertElement.className = "alert";
+    alertElement.innerHTML = "<h1> ✨ </h1> Any amazing ideas <br> <p>Be <b>Bold</b>, <i>Italic</i>, and <a href='https://ligmatv.vercel.app/' target='_blank'>Link</a> </p>  <input type='text' placeholder='Some input?' /> <br><br> <button onclick='closeAlert()'>Why</button> <button style='background: orange' onclick='closeAlert()'>Good</button> <button onclick='closeAlert()'>Alert</button> <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>How to fix</a>";
+
+    var styleElement = document.createElement("style");
+    styleElement.textContent = `
+        @keyframes grow { from { transform: scale(0); } to { transform: scale(1); } }
+        .alert { display: none; position: fixed; top: 20px; right: 20px; padding: 0 80px 30 80px; background-color: #fff; color: #000; text-align: center; border: none; border-radius: 5px; font-size: 24px; box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px; animation: grow 0.3s ease; }
+        
+        /** Extra button */
+        button { border: none; background: #07BBBC; padding: 8px 10px; border-radius: 10px; color: #fff; cursor: pointer;}
+         
+        /** Extra icon */
+        h1 { -webkit-animation: pulse 1s infinite ease-in-out alternate; animation: pulse 1s infinite ease-in-out alternate; }
+        @-webkit-keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }} @keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }}      
+      
+        /** Extra text */
+        p,a { font-size: 16px; }
+        `;
+    document.head.appendChild(styleElement);
+    document.body.appendChild(alertElement);
+    alertElement.style.display = "block";
+    alertElement.addEventListener("animationend")
+}
+
+// 6
+
+function sixAlert() {
+    var alertElement = document.createElement("div");
+    alertElement.className = "alert";
+    alertElement.innerHTML = "<br> <img src='https://youtube-stats-card.vercel.app/api?channelid=UC8rQRn6PqLyzyAhpiiGcOjw&title_color=367B80&icon_color=893AEF&text_color=367B80&bg_color=EFF1F5' alt='image' width='300' /> <br><br> Is it good to have an image? <br> <p>Be <b>Bold</b>, <i>Italic</i>, and <a href='https://ligmatv.vercel.app/' target='_blank'>Link</a> </p>  <input type='text' placeholder='Some input?' /> <br><br> <button onclick='closeAlert()'>Why</button> <button style='background: orange' onclick='closeAlert()'>Good</button> <button onclick='closeAlert()'>Alert</button> <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>How to fix</a>";
+
+    var styleElement = document.createElement("style");
+    styleElement.textContent = `
+        @keyframes grow { from { transform: scale(0); } to { transform: scale(1); } }
+        .alert { display: none; position: fixed; top: 20px; right: 20px; padding: 0 80px 30 80px; background-color: #fff; color: #000; text-align: center; border: none; border-radius: 5px; font-size: 24px; box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px; animation: grow 0.3s ease; }
+        
+        /** Extra button */
+        button { border: none; background: #07BBBC; padding: 8px 10px; border-radius: 10px; color: #fff; cursor: pointer;}
+         
+        /** Extra icon */
+        h1 { -webkit-animation: pulse 1s infinite ease-in-out alternate; animation: pulse 1s infinite ease-in-out alternate; }
+        @-webkit-keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }} @keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }}      
+      
+        /** Extra text */
+        p,a { font-size: 16px; }
+        `;
+    document.head.appendChild(styleElement);
+    document.body.appendChild(alertElement);
+    alertElement.style.display = "block";
+    alertElement.addEventListener("animationend")
+}
+
+// 7
+
+function sevenAlert() {
+    var alertElement = document.createElement("div");
+    alertElement.className = "alert";
+    alertElement.innerHTML = "<br> <img src='https://youtube-stats-card.vercel.app/api?channelid=UC8rQRn6PqLyzyAhpiiGcOjw&title_color=367B80&icon_color=893AEF&text_color=367B80&bg_color=EFF1F5' alt='image' width='300' /> <br><br> Is it good to customize anything? <br> <p>Be <b>Bold</b>, <i>Italic</i>, and <a href='https://ligmatv.vercel.app/' target='_blank'>Link</a> </p>  <input type='range' /> <br><br> <button onclick='closeAlert()'>Why</button> <button style='background: orange' onclick='closeAlert()'>Good</button> <button onclick='closeAlert()'>Alert</button> <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target='_blank'>How to fix</a>";
+
+    var styleElement = document.createElement("style");
+    styleElement.textContent = `
+        @keyframes grow { from { transform: scale(0); } to { transform: scale(1); } }
+        .alert { display: none; position: fixed; top: 20px; right: 20px; padding: 0 80px 30 80px; background-color: yellow; color: green; text-align: left; border: none; border-radius: 5px; font-size: 24px; box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px; animation: grow 0.3s ease; }
+        
+        /** Extra button */
+        button { border: none; background: #07BBBC; padding: 8px 10px; border-radius: 10px; color: #fff; cursor: pointer;}
+         
+        /** Extra icon */
+        h1 { -webkit-animation: pulse 1s infinite ease-in-out alternate; animation: pulse 1s infinite ease-in-out alternate; }
+        @-webkit-keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }} @keyframes pulse { from { transform: scale(0.8); } to { transform: scale(1.2); }}      
+      
+        /** Extra text */
+        p,a { font-size: 16px; }
+        `;
+    document.head.appendChild(styleElement);
+    document.body.appendChild(alertElement);
+    alertElement.style.display = "block";
+    alertElement.addEventListener("animationend")
+}
+
+// Close Alert
+
+function closeAlert() {
+    var alertElement = document.querySelector(".alert");
+    alertElement.parentNode.removeChild(alertElement);
+}
+
+</script>
+</html>
